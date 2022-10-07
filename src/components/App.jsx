@@ -10,9 +10,7 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      React Hello!!!!!
-      Olenka
-      New Olenka New!!!!
+      React Hello
     </div>
   );
 };
