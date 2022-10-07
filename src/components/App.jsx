@@ -11,6 +11,7 @@ export const App = () => {
       }}
     >
       React Hello!!!!!
+      Olenka
     </div>
   );
 };
