@@ -12,7 +12,7 @@ export const App = () => {
     >
       React Hello!!!!!
       Olenka
-      New
+      New Olenka New!!!!
     </div>
   );
 };
