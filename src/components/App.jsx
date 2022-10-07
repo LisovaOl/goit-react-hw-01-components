@@ -12,6 +12,7 @@ export const App = () => {
     >
       React Hello!!!!!
       Olenka
+      New
     </div>
   );
 };
