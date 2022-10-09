@@ -1,33 +1,31 @@
 export default function UserProfile({
-  userName,
-  userTag,
-  userAvatar,
-  userLocation,
-  userFollowers,
-  userViews,
-  userLikes,
+  name,
+  tag,
+  avatar,
+  location,
+  stats
 }) {
   return (
     <div>
       <div>
-        <img src={userAvatar} alt={userTag} width="100px" />
-        <p>{userName}</p>
-        <p>@{userTag}</p>
-        <p>{userLocation}</p>
+        <img src={avatar} alt={tag} width="100px" />
+        <p>{name}</p>
+        <p>@{tag}</p>
+        <p>{location}</p>
       </div>
 
       <ul>
         <li>
           <span>Followers</span>
-          <span>{userFollowers}</span>
+          <span>{stats.followers}</span>
         </li>
         <li>
           <span>Views</span>
-          <span>{userViews}</span>
+          <span>{stats.views}</span>
         </li>
         <li>
           <span>Likes</span>
-          <span>{userLikes}</span>
+          <span>{stats.likes}</span>
         </li>
       </ul>
     </div>
