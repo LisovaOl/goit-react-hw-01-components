@@ -1,16 +1,19 @@
+import UserProfile from './User/User';
+import user from '../user.json';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React Hello
+    <div>
+      <UserProfile
+        userName={user.username}
+        userTag={user.tag}
+        userLocation={user.location}
+        userAvatar={user.avatar}
+        userFollowers={user.stats.followers}
+        userViews={user.stats.views}
+        userLikes={user.stats.likes}
+      />
+      ,
     </div>
   );
 };
