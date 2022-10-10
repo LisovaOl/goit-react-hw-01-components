@@ -4,9 +4,9 @@ export default function Statistics({ title, stats }) {
       <h2>{title}</h2>
       <ul>
         {stats.map(stat => (
-          <li>
+          <li key = {stat.id}>
             <span>{stat.label}</span>
-            <span>{stat.percentage}</span>
+            <span>{stat.percentage}%</span>
           </li>
         ))}
       </ul>
