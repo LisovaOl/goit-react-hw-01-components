@@ -2,7 +2,7 @@ import UserProfile from './User/User';
 import userInfo from '../Data/user.json';
 import Statistics from './Statistics/Statistics';
 import dataInfo from '../Data/data.json';
-import FriendList from './Friends/Friends';
+import FriendList from './Friends/FriendsList';
 import friends from '../Data/friends.json';
 
 export const App = () => {
