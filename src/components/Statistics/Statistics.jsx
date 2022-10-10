@@ -1,27 +1,15 @@
-
-export default function Statistics({title, stats}) {
-    return (
-      <section>
-        <h2>{title}</h2>
-
-        <ul>
+export default function Statistics({ title, stats }) {
+  return (
+    <section>
+      <h2>{title}</h2>
+      <ul>
+        {stats.map(stat => (
           <li>
-            <span>{stats.label}</span>
-            <span>{stats.percentage}</span>
+            <span>{stat.label}</span>
+            <span>{stat.percentage}</span>
           </li>
-          <li>
-            <span>{stats.label}</span>
-            <span>{stats.percentage}</span>
-          </li>
-          <li>
-            <span>{stats.label}</span>
-            <span>{stats.percentage}</span>
-          </li>
-          <li>
-            <span>{stats.label}</span>
-            <span>{stats.percentage}</span>
-          </li>
-        </ul>
-      </section>
-    );
+        ))}
+      </ul>
+    </section>
+  );
 }
