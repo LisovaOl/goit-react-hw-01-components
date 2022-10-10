@@ -15,9 +15,9 @@ export const App = () => {
         avatar={userInfo.avatar}
         stats={userInfo.stats}
       />
-      ,
-      <Statistics title="Upload stats" stats={dataInfo} />,
-      <FriendList  friends={friends} />,
+      
+      <Statistics title="Upload stats" stats={dataInfo} />
+      <FriendList  friends={friends} />
     </div>
   );
 };
