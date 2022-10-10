@@ -5,7 +5,7 @@ export default function FriendList({ friends }) {
     <div>
       <ul >
         {friends.map(friend => (
-          <li >
+          <li key={friend.id}>
             <FriendsListItem friends={friend}/>
           </li>
         ))}
