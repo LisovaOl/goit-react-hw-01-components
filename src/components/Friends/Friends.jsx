@@ -5,7 +5,7 @@ export default function FriendList({ friends }) {
         {friends.map(friend => (
           <li>
             <span>{friend.isOnline}</span>
-            <img src={friend.avatar} alt={friend.name} />
+            <img src={friend.avatar} alt={friend.name} width="50" />
             <p>{friend.name}</p>
           </li>
         ))}

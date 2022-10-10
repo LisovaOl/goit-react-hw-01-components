@@ -34,7 +34,7 @@ ul {
 
 img {
   display: block;
-  object-fit: cover;
-  width: 30%;
-  height: 30%;
+  /* object-fit: cover; */
+  /* width: 30%; */
+  /* height: 30%; */
 }
