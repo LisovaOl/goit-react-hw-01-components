@@ -1,5 +1,5 @@
-import StatItem from './StatisticsItem';
 import PropTypes from 'prop-types';
+import StatItem from './StatisticsItem';
 
 export default function StatList({ title, stats }) {
   return (

@@ -1,10 +1,7 @@
+import PropTypes from 'prop-types';
+
 export default function UserProfile({
-  name,
-  tag,
-  avatar,
-  location,
-  stats
-}) {
+  name, tag, avatar, location, stats }) {
   return (
     <div>
       <div>
@@ -30,4 +27,17 @@ export default function UserProfile({
       </ul>
     </div>
   );
+}
+
+UserProfile.propTypes = {
+  name: PropTypes.string,
+  tag: PropTypes.string,
+  avatar: PropTypes.string,
+  location: PropTypes.string,
+  stats: PropTypes.shape({
+    followers: PropTypes.number,
+    views: PropTypes.number,
+    likes: PropTypes.number,
+  }),
+
 }
