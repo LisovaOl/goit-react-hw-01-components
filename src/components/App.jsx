@@ -1,6 +1,6 @@
 import UserProfile from './User/User';
 import userInfo from '../Data/user.json';
-import Statistics from './Statistics/Statistics';
+import StatList from './Statistics/StatisticsList';
 import dataInfo from '../Data/data.json';
 import FriendList from './Friends/FriendsList';
 import friends from '../Data/friends.json';
@@ -15,10 +15,9 @@ export const App = () => {
         avatar={userInfo.avatar}
         stats={userInfo.stats}
       />
-      
-      <Statistics title="Upload stats" stats={dataInfo} />
-      <FriendList  friends={friends} />
+
+      <StatList title="Upload stats" stats={dataInfo} />
+      <FriendList friends={friends} />
     </div>
   );
 };
-console.log(dataInfo);

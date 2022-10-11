@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export default function FriendList({ friends }) {
+export default function FriendItem({ friends }) {
   return (
     <div>
       <span>{friends.isOnline}</span>
@@ -10,7 +10,7 @@ export default function FriendList({ friends }) {
   );
 }
 
-FriendList.propTypes = {
+FriendItem.propTypes = {
   isOnline: PropTypes.bool,
   avatar: PropTypes.string,
   name: PropTypes.string,
