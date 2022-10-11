@@ -4,7 +4,7 @@ import StatItem from './StatisticsItem';
 export default function StatList({ title, stats }) {
   return (
     <section>
-      <h2>{title}</h2>
+      {title && <h2>{title}</h2>}
       <ul>
         {stats.map(stat => (
           <li key={stat.id}>
