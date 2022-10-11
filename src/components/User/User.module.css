@@ -1,39 +1,37 @@
 .profile {
-  display: inline-block;
+  width: 300px;
   text-align: center;
   border: 2px solid black;
   border-radius: 10px;
+    display: inline-block;
+
+  margin-right: 30px;
 }
-.description{
-padding: 20px;
+.description {
+  padding: 20px;
 }
 .name {
   margin-top: 10px;
   text-transform: uppercase;
   font-weight: bold;
 }
-.tag, 
-.location
-{
+.tag,
+.location {
   margin-top: 10px;
   text-align: center;
-
 }
-.stats{
+.stats {
   display: flex;
   margin-top: 10px;
   padding: 20px;
   background-color: lightslategray;
-
 }
-.label{
+.label {
   display: flex;
   padding-left: 16px;
   padding-right: 16px;
   margin-bottom: 10px;
-  
 }
-.quantity{
-    font-weight: bold;
-
+.quantity {
+  font-weight: bold;
 }
