@@ -9,8 +9,10 @@ export default function StatItem({ stats }) {
   );
 }
 StatItem.propTypes = {
-  label: PropTypes.string,
-  percentage: PropTypes.number,
+  stats: PropTypes.shape({
+    label: PropTypes.string,
+    percentage: PropTypes.number,
+  }),
 };
 // export default function Statistics({ title, stats }) {
 //   return (
