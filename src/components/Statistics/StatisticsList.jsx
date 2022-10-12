@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import StatItem from './StatisticsItem';
-import css from './StatisticsList.module.css'
+import css from './StatisticsList.module.css';
 
 export default function StatList({ title, stats }) {
   return (
@@ -8,22 +8,20 @@ export default function StatList({ title, stats }) {
       {title && <h2 className={css.title}>{title}</h2>}
       <ul className={css.stat_list}>
         {stats.map(stat => (
-          <li key={stat.id} className={css.item}>
-            <StatItem stats={stat} />
-          </li>
+          <StatItem stats={stat} />
         ))}
       </ul>
     </section>
   );
 }
 
-StatList.propTypes = {
-  stats: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-    })
-  ),
-};
+// StatList.propTypes = {
+//   stats: PropTypes.arrayOf(
+//     PropTypes.shape({
+
+//     })
+//   ),
+// };
 
 //export default function Statistics({ title, stats }) {
 //   return (
