@@ -9,10 +9,11 @@ export default function StatItem({ stats }) {
     </div>
   );
 }
+
 StatItem.propTypes = {
   stats: PropTypes.shape({
     label: PropTypes.string,
     percentage: PropTypes.number,
   }),
-  
+
 };
