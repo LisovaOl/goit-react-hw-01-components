@@ -27,7 +27,7 @@
   height: 20px;
   border-radius: 50%;
   /* background-color: ${p => p.online ? 'green' : 'red'} */
-  /* background-color: blue; */
+  background-color: green;
   /* background-color: ${props => {
     if (props.isOnline === true) {
       return green;
@@ -54,3 +54,4 @@ background-color: green;
 background-color: red;
 }
  */
+
