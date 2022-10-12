@@ -14,4 +14,5 @@ StatItem.propTypes = {
     label: PropTypes.string,
     percentage: PropTypes.number,
   }),
+  
 };
