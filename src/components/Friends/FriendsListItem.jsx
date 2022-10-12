@@ -1,4 +1,3 @@
-import { calculateNewValue } from '@testing-library/user-event/dist/utils';
 import PropTypes from 'prop-types';
 import css from './FriendsList.module.css';
 
@@ -9,7 +8,7 @@ export default function FriendItem({ friends }) {
     <div className={css.friends_item}>
       <span
         className={css.status}
-        // style={{ backgroundColor: friends.isOnline ? 'green' : 'red' }}
+        style={{ backgroundColor: friends.isOnline ? 'green' : 'red' }}
       >
         {friends.isOnline}
       </span>
