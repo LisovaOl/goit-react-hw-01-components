@@ -24,7 +24,7 @@ function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 StatList.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   friends: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,

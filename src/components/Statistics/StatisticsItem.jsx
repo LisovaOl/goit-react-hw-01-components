@@ -12,8 +12,7 @@ export default function StatItem({ stats }) {
 
 StatItem.propTypes = {
   stats: PropTypes.shape({
-    label: PropTypes.string,
-    percentage: PropTypes.number,
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
   }),
-
 };
